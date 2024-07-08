@@ -1,0 +1,55 @@
+/*
+ REALIZAR UN PROGRAMA QUE INGRESE LOS DATOS DE N EMPLEADOS DE UNA EMPRESA:
+
+CODIGO DEL EMPLEADO, APELLIDOS Y NOMBRES, SEXO, ESTADO CIVIL, 
+
+CATEGORIA  (PUEDE SER AUXILIAR, TECNICO O PROFESIONAL), 
+
+SUELDO BASICO, BONIFICACION
+
+
+DESCUENTO RETENCION DE QUINTA CATEGORIA(SOLO PARA PROFESIONALES),
+BONIFICACION ESPECIAL( SOLO PARA TECNICOS)
+BONIFICACION POR RIESGO DE VIDA( SOLO PARA TECNICOS)
+
+SE PIDE IMPRIMIR UN REPORTE CON LOS DATOS DE ENTRADA
+QUE INCLUYA EL SUELDO NETO DE CADA TRABAJADOR Y AL PIE DEL REPORTE SE DEBE IMPRIMIR EL TOTAL DE SUELDOS NETOS POR CATEGORIA
+
+APLIQUE SOBRECARGA DE METODOS
+ */
+package semana006polim;
+
+
+public class Tecnico extends Empleado{
+
+    public Tecnico( String cod, String apeynom, String sexo, String estado, String cat, double sueldob, double bonogen,double bonotec) {
+        
+        super(cod, apeynom, sexo, estado, cat, sueldob, bonogen);
+        
+        this.bonotec = bonotec;
+    }
+
+    public double getBonotec() {
+        return bonotec;
+    }
+
+    
+
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    private double bonotec;
+}

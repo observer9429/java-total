@@ -1,0 +1,3 @@
+temporizadorlocalinterno.reloj
+temporizadorlocalinterno.reloj$1damelahora2
+temporizadorlocalinterno.Temporizadorlocalinterno

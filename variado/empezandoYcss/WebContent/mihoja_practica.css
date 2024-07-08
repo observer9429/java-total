@@ -1,0 +1,95 @@
+@charset "ISO-8859-1";
+
+/*  reseteo del css*/
+
+html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,form,fieldset{
+	
+	
+	padding:0;
+	margin:0; 
+	font-size:100%;
+	font-weight:normal;
+	
+}
+
+ol{
+	margin-left:1.4em;
+	list-style:decimal;
+}
+
+ul{
+	margin-left:1.4em;
+	list-style:square;
+}
+
+img{
+	border:0;
+}
+
+
+#principal{
+	
+	float: left;
+	width: 580px;
+	
+}
+
+#lateral{
+	
+	margin-left:600px;
+	padding:15px;
+	background: #C8B696;
+}
+
+body{
+	
+	color: #b1967c;
+	font-family:"Palatino linotype","Book Antiqua",Palatino,serif;
+	padding-top:100px;
+	background: #ECD089 url(fondo_cuerpo.png) repeat-x;
+	width:800px;
+	margin:0 auto;
+}
+
+h1{
+	font-size:3em;
+	font-family:"Arial Black",Gadget, sans-serif;
+}
+h2{
+	font-size:2.2em;
+	color:BLUE;
+	margin-bottom:5px;
+}
+/*  modificaremos el estilo solo al primer h2*/
+
+#principal h2{
+	
+	color: #458C8B;
+	border-bottom: 2px white solid;/*  grosor, color, estilo*/
+	background: url(flor.png) no-repeat;
+	padding: 0 0 2px 80px;
+}
+
+#principal p{
+	
+	color: #2D7EB5;
+	font-family:"Palatino linotype","Book Antiqua",Palatino,serif;
+	font-size:1.1em;
+	line-height:150%;/*para agregar la sangria */
+	margin-bottom:10px;
+	margin-left:80px;
+}
+
+#principal .introduccion{
+	
+	color:#CE7938;
+	font-family:Arial Black",Gadget, sans-serif;
+	font-size:1.2em;
+	margin-left:0px;
+	margin-bottom: 25px;
+	
+}
+	
+	
+
+

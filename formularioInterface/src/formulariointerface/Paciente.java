@@ -1,0 +1,96 @@
+/*
+ DISEÑE UN PROGRAMA QUE INGRESE LOS DATOS DE LOS PACIENTES DE UNA
+CLÍNICA: CÓDIGO DEL PACIENTE, APELLIDOS Y NOMBRES, SEXO, EDAD,
+ESPECIALIDAD EN LA QUE SE ATIENDE (PUEDE SER CIRUGÍA, NEUROLOGÍA O
+GASTROENTEROLOGIA)
+, CANTIDAD DE DÍAS DE INTERNAMIENTO, COSTO POR DÍA,
+COSTO POR REHABILITACIÓN SOLO PARA CIRUGÍA,
+COSTO POR USO DE EQUIPOS SOLO PARA NEUROLOGÍA, 
+COSTO POR RESONANCIA MAGNÉTICA SOLO PARA GASTROENTEROLOGIA, 
+
+DESCUENTO DEL 10% PARA TODOS LOS PACIENTES DE CIRUGÍA,
+DESCUENTO DEL 15% PARA PACIENTES DE NEUROLOGÍA MENORES DE 12 AÑOS Y
+DESCUENTO DEL 12% PARA PACIENTES DE GASTROENTEROLOGIA QUE SEAN MUJERES.
+
+SE PIDE APLICAR HERENCIA, CLASE ABSTRACTA E INTERFACE. 
+LA CLASE ABSTRACTA TENDRÁ COMO MÉTODO ABSTRACTO IMPORTE BRUTO A PAGAR, 
+LA INTERFACE REPORTE TENDRA COMO METODO TOSTRING() 
+Y LA INTERFACE APOYO TENDRA COMO METODO DESCUENTO.
+
+
+ ademas se pide totalizar la cantidad de pacientes por sexo y especialidad en la que se atiende
+, el paciente de mayor edad, la cantidad de apacientes entre las edades de 50 a mas años
+ */
+package formulariointerface;
+
+/**
+ *
+ * @author LAB-USR-AQ265-A0302
+ */
+public abstract class Paciente {
+
+    public Paciente(String cod, String apeynom, String sexo, String especialidad, int edad, int diasint, double costodia) {
+        this.cod = cod;
+        this.apeynom = apeynom;
+        this.sexo = sexo;
+        this.especialidad = especialidad;
+        this.edad = edad;
+        this.diasint = diasint;
+        this.costodia = costodia;
+    }
+
+    public String getCod() {
+        return cod;
+    }
+
+    public String getApeynom() {
+        return apeynom;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public String getEspecialidad() {
+        return especialidad;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public int getDiasint() {
+        return diasint;
+    }
+
+    public double getCostodia() {
+        return costodia;
+    }
+
+    //***************************
+
+    @Override
+    public String toString() {
+        return "cod=" + cod + 
+                ", apeynom=" + apeynom + ", sexo=" + sexo + ", especialidad=" + especialidad + ", edad=" + edad + ", diasint=" + diasint + ", costodia=" + costodia + '}';
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    abstract double importeBrutoPagar();
+    
+    
+    
+    
+    
+    private String cod, apeynom, sexo,  especialidad;
+    
+    private int edad, diasint;
+    
+    private double costodia;
+}
